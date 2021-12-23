@@ -1,7 +1,4 @@
-const { createPromptModule } = require("inquirer")
 
-function template(data) {
-    return `
     <!DOCTYPE html>
 <html lang="en">
 
@@ -20,19 +17,19 @@ function template(data) {
 <body>
     <div class="home">
         <div class="row justify-content-center">
-            <div class="card m-3" style="width: 20rem">
+            <div class="card m-3 shadow-lg" style="width: 20rem">
                 <div class="bg-primary p-3 pb-1 text-light">
-                    <h5 class="">${data.name}</h5>
-                    <h5 class=""><i class="fas fa-database"></i> ${data.type} Engineer</h5>
+                    <h5 class=""></h5>
+                    <h5 class=""><i class="fas fa-database"></i>  Engineer</h5>
                 </div>
                 <div class="card-body bg-light">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Id: 1</li>
                         <li class="list-group-item">
-                            Email: <a href="mailto:${data.email}">${data.email}</a>
+                            Email: <a href="mailto:"></a>
                         </li>
                         <li class="list-group-item">
-                            GitHub: <a href="http://github.com/${data.github}">${data.github}</a>
+                            GitHub: <a href="http://github.com/m">m</a>
                         </li>
                     </ul>
                 </div>
@@ -45,7 +42,4 @@ function template(data) {
 </body>
 
 </html>
-    `
-}
-
-module.exports = { template }
+    
