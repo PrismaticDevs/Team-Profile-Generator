@@ -25,7 +25,7 @@ inquirer.prompt([{
     ])
     .then(answers => {
         const data = template(answers);
-        fs.writeFile('./src/index.html', data, (err) => {
+        fs.writeFile('./dist/index.html', data, (err) => {
             if (err) {
                 console.error(err);
             }
