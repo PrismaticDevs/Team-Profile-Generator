@@ -5,7 +5,7 @@ const { template } = require('./src/template.js');
 inquirer.prompt([{
             type: "input",
             name: "name",
-            message: "What is he developer's first name?"
+            message: "What is the developer's first name?"
         },
         {
             type: 'input',
@@ -13,9 +13,10 @@ inquirer.prompt([{
             message: `What is the developer's email?`
         },
         {
-            type: 'input',
+            type: 'list',
             name: 'type',
-            message: `What type of rngineer is the developer?`
+            message: `What type of engineer is the developer?`,
+            "choices": ['QA-Engineer', 'Full-Stack', 'Back-End', 'Front-End']
         },
         {
             type: 'input',

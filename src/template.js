@@ -1,6 +1,13 @@
-const { createPromptModule } = require("inquirer")
-
 function template(data) {
+    if (data.type === "Back-End") {
+        data.type = `<i class="mr-1 fas fa-database"></i>` + "Back-End"
+    } else if (data.type === "Front-End") {
+        data.type = `<i class="mr-1 fab fa-html5"></i><i class="mr-1 fab fa-css3-alt"></i>` + "Front-End"
+    } else if (data.type === "Full-Stack") {
+        data.type = `<i class="mr-1 fab fa-html5"></i><i class="mr-1 fab fa-css3-alt"></i><i class="mr-1 fas fa-database"></i>` + "Full-Stack"
+    } else if (data.type === "QA") {
+        data.type = `<i class="mr-1 fab fa-glasses"></i>` + "QA"
+    }
     return `
     <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +16,7 @@ function template(data) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prismatic Dev Team</title>
     </title>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8f9f5cba36.js" crossorigin="anonymous"></script>
@@ -23,7 +30,7 @@ function template(data) {
             <div class="card m-3" style="width: 20rem">
                 <div class="bg-primary p-3 pb-1 text-light">
                     <h5 class="">${data.name}</h5>
-                    <h5 class=""><i class="fas fa-database"></i> ${data.type} Engineer</h5>
+                    <h5 class="">${data.type} Engineer</h5>
                 </div>
                 <div class="card-body bg-light">
                     <ul class="list-group list-group-flush">
