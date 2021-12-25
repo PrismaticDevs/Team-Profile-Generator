@@ -6,7 +6,7 @@ function template(data) {
     } else if (data.type === "Full-Stack") {
         data.type = `<i class="mr-1 fab fa-html5"></i><i class="mr-1 fab fa-css3-alt"></i><i class="mr-1 fas fa-database"></i>` + "Full-Stack"
     } else if (data.type === "QA") {
-        data.type = `<i class="mr-1 fab fa-glasses"></i>` + "QA"
+        data.type = `<i class="mr-1 fas fa-glasses"></i>` + "QA"
     }
     return `
     <!DOCTYPE html>

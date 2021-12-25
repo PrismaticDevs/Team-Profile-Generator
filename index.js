@@ -16,7 +16,7 @@ inquirer.prompt([{
             type: 'list',
             name: 'type',
             message: `What type of engineer is the developer?`,
-            "choices": ['QA-Engineer', 'Full-Stack', 'Back-End', 'Front-End']
+            "choices": ['QA', 'Full-Stack', 'Back-End', 'Front-End']
         },
         {
             type: 'input',
