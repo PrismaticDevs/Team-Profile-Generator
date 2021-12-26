@@ -32,7 +32,7 @@ University of Denver
 
 ## Testing
 
-There are 4 Jest tests you can run using Jest. Employee.test.js, Engineer.test.js, Intern.test.js, and Manager.test.js. To run a test type jest test-name being sure to specify the name of the testb you wish to run.
+There are 4 Jest tests you can run using Jest. Employee.test.js, Engineer.test.js, Intern.test.js, and Manager.test.js. To run a test type jest test-name being sure to specify the name of the test you wish to run.
 
 ## Questions
 
