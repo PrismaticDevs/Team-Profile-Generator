@@ -39,4 +39,4 @@ There are 4 Jest tests you can run using Jest. Employee.test.js, Engineer.test.j
 Contact me:
 Github: [PrismaticDevelopmentStudios](https://github.com/PrismaticDevelopmentStudios) <br>
 Email: [matthewbrignola@ymail.com](matthewbrignola@ymail.com) <br>
-Phone: [719-351-5828](719-351-5828) <br>
+Phone: [719-351-5828](7193515828) <br>
