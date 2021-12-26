@@ -16,11 +16,11 @@
 
 ## Description
 
-This conole appliction gnerates an employee roster based on the user's ansers to a series of prompts.
+This console appliction gnerates an employee roster based on the user's ansers to a series of prompts.
 
 ## Installation
 
-Clone this repo into the folder you want this application ro run in. Then cd into the Team-Profile-Generator directory and run npm install to dosnload the necessary depenencies from the package.json file. Based on your answers to a series of prompts, an html file will be generated with the employee roster you provided.
+Clone this repo into the folder you want this application ro run in. Then cd into the Team-Profile-Generator directory and run npm install to download the necessary depenencies from the package.json file. Based on your answers to a series of prompts, an HTML file will be generated with the employee roster you provided.
 
 ## Usage
 
