@@ -16,15 +16,15 @@
 
 ## Description
 
-This console appliction gnerates an employee roster based on the user's ansers to a series of prompts.
+This console appliction gnerates an employee roster based on the user's answers to a series of prompts.
 
 ## Installation
 
-Clone this repo into the folder you want this application ro run in. Then cd into the Team-Profile-Generator directory and run npm install to download the necessary depenencies from the package.json file.
+In order to run this application you must have Node.js and NPM installed. Clone this repo into the folder you want to build this this application in. Then cd into the Team-Profile-Generator directory and run npm install to download the necessary depenencies from the package.json file.
 
 ## Usage
 
-Cd into the Team-Profile-Generator directory run npm index. Answer the command line prompts being sure to specify what the employees you are adding will be, and when finished, select that there are no more employees you need to add and the program will terminate. Based on your answers to a series of prompts, an HTML file will be generated with the employee roster names and duties you provided. The HTML file is created with Bootstrap CSS styling.
+Once you cd into the Team-Profile-Generator directory, run npm index. Answer the command line prompts being sure to specify what the employees' roles you are adding will be. When finished adding employees, select that there are no more employees you need to add and the program will terminate. Based on your answers to the series of prompts, an HTML file will be generated with the employee roster names and duties you provided. The HTML file is created with Bootstrap CSS styling.
 
 ## Contributors
 
@@ -32,7 +32,7 @@ University of Denver
 
 ## Testing
 
-Run npm run test
+There are 4 Jest tests you can run using Jest. Employee.test.js, Engineer.test.js, Intern.test.js, and Manager.test.js. To run a test type jest test-name being sure to specify the name of the testb you wish to run.
 
 ## Questions
 
