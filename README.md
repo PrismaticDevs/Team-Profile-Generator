@@ -24,7 +24,7 @@ Clone this repo into the folder you want this application ro run in. Then cd int
 
 ## Usage
 
-Answer the prompts being sure to specify what the employees you are adding will be, and when finished, select that there are no more employees you need to add and the program will terminate. Based on your answers to a series of prompts, an HTML file will be generated with the employee roster you provided. The HTML file is created with Bootstrap CSS styling.
+Cd into the Team-Profile-Generator directory run npm index. Answer the command line prompts being sure to specify what the employees you are adding will be, and when finished, select that there are no more employees you need to add and the program will terminate. Based on your answers to a series of prompts, an HTML file will be generated with the employee roster names and duties you provided. The HTML file is created with Bootstrap CSS styling.
 
 ## Contributors
 
