@@ -3,8 +3,14 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const { template } = require('./src/template.js');
+const { Manager, Engineer, Intern, Employee } = require('./lib/classes');
 
 inquirer.prompt([{
+            type: 'list',
+            name: 'role',
+            message: 'What type of employee is being added?',
+            choices: ['Employee', 'Manager', 'Engineer', 'Intern']
+        }, {
             type: "input",
             name: "name",
             message: "What is the developer's first name?"
@@ -12,13 +18,13 @@ inquirer.prompt([{
         {
             type: 'input',
             name: 'email',
-            message: `What is the developer's email?`
+            message: `What is the developer's email?`,
         },
         {
             type: 'list',
             name: 'type',
             message: `What type of engineer is the developer?`,
-            "choices": ['QA', 'Full-Stack', 'Back-End', 'Front-End']
+            choices: ['QA', 'Full-Stack', 'Back-End', 'Front-End']
         },
         {
             type: 'input',

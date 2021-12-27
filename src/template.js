@@ -11,7 +11,7 @@ function template(data) {
         data.type = `<i class="mr-1 fas fa-glasses"></i>` + "QA"
     }
     return `
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -32,16 +32,16 @@ function template(data) {
             <div class="card m-3" style="width: 20rem">
                 <div class="bg-primary p-3 pb-1 text-light">
                     <h5 class="">${data.name}</h5>
-                    <h5 class="">${data.type} Engineer</h5>
+                    <h5 class="">${data.role}</h5>
                 </div>
                 <div class="card-body bg-light">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Id: 1</li>
                         <li class="list-group-item">
-                            Email: <a href="mailto:${data.email}">${data.email}</a>
+                            Email: <a target="_blank" href="mailto:${data.email}">${data.email}</a>
                         </li>
                         <li class="list-group-item">
-                            GitHub: <a href="http://github.com/${data.github}">${data.github}</a>
+                            GitHub: <a target="_blank" href="http://github.com/${data.github}">${data.github}</a>
                         </li>
                     </ul>
                 </div>
