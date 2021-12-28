@@ -5,7 +5,7 @@ const inquirer = require('inquirer');
 const { template } = require('./src/template.js');
 const { Manager, Engineer, Intern, Employee } = require('./lib/classes');
 
-inquirer.prompt([{
+const questions = () => inquirer.prompt([{
             type: 'list',
             name: 'role',
             message: 'What type of employee is being added?',
@@ -18,7 +18,7 @@ inquirer.prompt([{
         {
             type: 'input',
             name: 'email',
-            message: `What is the developer's email?`,
+            message: `What is the employee's email?`,
         },
         {
             type: 'list',
@@ -43,3 +43,21 @@ inquirer.prompt([{
     .catch(err => {
         console.error(err);
     })
+
+const addNew = () => inquirer.prompt([{
+        type: 'confirm',
+        name: 'add',
+        message: 'Would you like to add a any new employees?'
+    }])
+    .then(answers => {
+        if (answers.add) {
+            questions()
+
+        } else {
+            console.log('Exit')
+        }
+    })
+    .catch(err => {
+        console.error(err);
+    })
+addNew();

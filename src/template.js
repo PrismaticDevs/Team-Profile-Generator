@@ -27,9 +27,7 @@ function template(data) {
 </head>
 
 <body>
-    <div class="home">
-        <div class="row justify-content-center">
-            <div class="card m-3" style="width: 20rem">
+            <div class="card-lg-6 m-2" style="width: 20rem">
                 <div class="bg-primary p-3 pb-1 text-light">
                     <h5 class="">${data.name}</h5>
                     <h5 class="">${data.role}</h5>
@@ -45,8 +43,6 @@ function template(data) {
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
