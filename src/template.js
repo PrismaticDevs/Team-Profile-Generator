@@ -30,7 +30,7 @@ function template(data) {
             <div class="card-lg-6 m-2" style="width: 20rem">
                 <div class="bg-primary p-3 pb-1 text-light">
                     <h5 class="">${data.name}</h5>
-                    <h5 class="">${data.role}</h5>
+                    <h5 class="">${data.type}</h5>
                 </div>
                 <div class="card-body bg-light">
                     <ul class="list-group list-group-flush">
