@@ -16,7 +16,7 @@
 
 ## Description
 
-This command line appliction gnerates an employee roster based on the user's answers to a series of prompts.
+This command line appliction gnerates an employee roster in an HTML file with Bootstrap styling based on the user's answers to a series of prompts.
 
 ## Installation
 
