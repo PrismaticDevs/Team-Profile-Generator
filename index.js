@@ -5,7 +5,7 @@ const inquirer = require('inquirer');
 const { Manager, Engineer, Intern } = require('./src/classes');
 const { manager, engineer, intern } = require('./lib/template.js');
 // Generator Function
-const { htmlGenerator } = require('./lib/generator');
+const { htmlGenerator } = require('./src/generator');
 // Global Vars
 let index;
 let employees = [];
