@@ -4,6 +4,7 @@
 
 - [License](#license)
 - [Description](#description)
+- [Video](#video)
 - [Installation](#installation)
 - [Usage](#instructions)
 - [Contributors](#contributors)
@@ -17,6 +18,10 @@
 ## Description
 
 This command line appliction gnerates in an HTML file with Bootstrap styling to display an employee roster that gets created based on the user's answers to a series of prompts.
+
+## Video
+
+https://drive.google.com/file/d/1EO3VfxIFRXeyyggPmoPeBkGKRd5BXWC7/view?usp=sharing
 
 ## Installation
 
