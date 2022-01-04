@@ -32,7 +32,7 @@ University of Denver
 
 ## Testing
 
-There are 4 Jest tests you can run using Jest. Employee.test.js, Engineer.test.js, Intern.test.js, and Manager.test.js. To run a test type npm test.
+There are 4 Jest tests you can run using Jest. Employee.test.js, Engineer.test.js, Intern.test.js, and Manager.test.js. To run the tests run npm test from the command line.
 
 ## Questions
 
