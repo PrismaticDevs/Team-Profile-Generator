@@ -20,7 +20,7 @@ This command line appliction gnerates an employee roster in an HTML file with Bo
 
 ## Installation
 
-In order to run this application you must have Node.js and NPM installed. Clone this repo into the folder you want to build this this application in. Then cd into the Team-Profile-Generator directory and run npm install to download the necessary depenencies from the package.json file.
+In order to run this application you must have Node.js. Clone this repo into the folder you want to build this this application in. Then cd into the Team-Profile-Generator directory and run npm install to download the necessary depenencies from the package.json file.
 
 ## Usage
 
