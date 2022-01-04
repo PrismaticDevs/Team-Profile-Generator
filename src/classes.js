@@ -1,5 +1,4 @@
-// PrismaticDevelopmentStudios
-
+// Construction of employee classes
 class Employee {
     constructor(id, name, role, email) {
         this._id = id;

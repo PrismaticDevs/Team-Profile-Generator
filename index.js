@@ -1,14 +1,23 @@
 // Required NPM Modules
 const fs = require('fs');
 const inquirer = require('inquirer');
+// Employee classes
 const { Manager, Engineer, Intern } = require('./src/classes');
 const { manager, engineer, intern } = require('./lib/template.js');
-let employees = [];
+// Generator Function
+const { htmlGenerator } = require('./lib/generator');
+// Global Vars
 let index;
+let employees = [];
 let htmlTemplate = [];
-fs.writeFile('./dist/index.html', '', (err) => {
-    console.error(err);
-});
+// Resets the index.html file
+function finishTemplate() {
+    fs.writeFile('./dist/index.html', htmlGenerator(htmlTemplate.join('')), (err) => {
+        if (err) {
+            console.error(err);
+        }
+    });
+}
 // How to make async and wait the template
 const addEmployee = () => inquirer.prompt([{
         type: 'list',
@@ -16,6 +25,7 @@ const addEmployee = () => inquirer.prompt([{
         message: 'What type of empoyee would you like to add?',
         choices: ['Manager', 'Engineer', 'Intern']
     }]).then(answers => {
+        // Checks for Employee Type Seklection
         if (answers.type === 'Manager') {
             inquirer.prompt([{
                         type: 'input',
@@ -46,6 +56,8 @@ const addEmployee = () => inquirer.prompt([{
                         .then(answers => {
                             if (answers.continue) {
                                 addEmployee();
+                            } else {
+                                finishTemplate();
                             }
                         })
                 })
@@ -79,6 +91,8 @@ const addEmployee = () => inquirer.prompt([{
                         .then(answers => {
                             if (answers.continue) {
                                 addEmployee();
+                            } else {
+                                finishTemplate();
                             }
                         })
                 })
@@ -112,47 +126,17 @@ const addEmployee = () => inquirer.prompt([{
                         .then(answers => {
                             if (answers.continue) {
                                 addEmployee();
+                            } else {
+                                finishTemplate();
                             }
                         })
                 })
         }
     })
-    .then(() => {
-        function htmlGenerator(employees) {
-            return `
-        <!DOCTYPE html>
-        <html lang="en">
-        
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Prismatic Dev Team</title>
-            </title>
-            <!-- Font Awesome -->
-            <script src="https://kit.fontawesome.com/8f9f5cba36.js" crossorigin="anonymous"></script>
-            <!-- Bootstrap -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        </head>
-        
-        <body>
-        <div class="row">
-        ${employees}
-        </div>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        </body>
-        
-        </html>
-        `
-        };
-        fs.writeFile('./dist/index.html', htmlGenerator(htmlTemplate.join('')), (err) => {
-            console.error(err);
-        });
-    })
     .catch(err => {
-        console.error(err);
+        if (err) {
+            console.error(err);
+        }
     });
 // Might be that this promise needs to resolve first
 addEmployee();
