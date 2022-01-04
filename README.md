@@ -16,7 +16,7 @@
 
 ## Description
 
-This command line appliction gnerates an employee roster in an HTML file with Bootstrap styling based on the user's answers to a series of prompts.
+This command line appliction gnerates in an HTML file with Bootstrap styling to display an employee roster that gets created based on the user's answers to a series of prompts.
 
 ## Installation
 
@@ -24,7 +24,7 @@ In order to run this application you must have Node.js. Clone this repo into the
 
 ## Usage
 
-Once you cd into the Team-Profile-Generator directory, run npm index. Answer the command line prompts being sure to specify what the employees' roles you are adding will be. When finished adding employees, select that there are no more employees you need to add and the program will terminate. Based on your answers to the series of prompts, an HTML file will be generated with the employee roster names and duties you provided. The HTML file is created with Bootstrap CSS styling.
+Once you cd into the Team-Profile-Generator directory, run npm index. Answer the command line prompts being sure to specify what the employees' roles you are adding will be. When finished adding employees, answer no to adding another employee and the progrtam will terminate. Based on your answers to the series of prompts, an HTML file will be generated with the employee roster names and duties you provided. The HTML file is created with Bootstrap CSS styling.
 
 ## Contributors
 
@@ -32,7 +32,7 @@ University of Denver
 
 ## Testing
 
-There are 4 Jest tests you can run using Jest. Employee.test.js, Engineer.test.js, Intern.test.js, and Manager.test.js. To run a test type jest test-name being sure to specify the name of the test you wish to run.
+There are 4 Jest tests you can run using Jest. Employee.test.js, Engineer.test.js, Intern.test.js, and Manager.test.js. To run a test type npm test.
 
 ## Questions
 
