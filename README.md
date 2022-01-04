@@ -21,7 +21,7 @@ This command line appliction gnerates in an HTML file with Bootstrap styling to 
 
 ## Video
 
-https://drive.google.com/file/d/1EO3VfxIFRXeyyggPmoPeBkGKRd5BXWC7/view?usp=sharing
+https://youtu.be/ToeHh9Inb8w
 
 ## Installation
 
