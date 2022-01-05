@@ -1,6 +1,6 @@
 const { Manager } = require('../src/classes');
 
-describe("Manager", () => {
+describe("Manager creates new manager", () => {
     const manager = new Manager();
 
     test("should check if manager is of type object", () => {

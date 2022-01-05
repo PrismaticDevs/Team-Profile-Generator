@@ -1,6 +1,6 @@
 const { Intern } = require('../src/classes');
 
-describe("Intern", () => {
+describe("creates new intern", () => {
     const intern = new Intern();
 
     test("should check if intern is of type object", () => {
