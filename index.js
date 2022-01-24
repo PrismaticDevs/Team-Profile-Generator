@@ -30,7 +30,7 @@ const addEmployee = () => inquirer.prompt([{
             inquirer.prompt([{
                         type: 'input',
                         name: 'name',
-                        message: 'What is the firstname?'
+                        message: 'What is the first name?'
                     },
                     {
                         type: 'input',
